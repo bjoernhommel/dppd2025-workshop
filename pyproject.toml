@@ -1,0 +1,47 @@
+[project]
+name = "dppd2025-workshop"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Björn E. Hommel",email = "bjorn.hommel@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12,<3.14"
+dependencies = [
+    "transformers (==4.54.0)",
+    "sentence-transformers (>=5.1.0,<6.0.0)",
+    "torch (==2.7.1)",
+    "torchvision (==0.22.1)",
+    "marimo (>=0.15.5,<0.16.0)",
+    "numpy (>=1.18.5,<2.0.0)",
+    "nltk (>=3.9.1,<4.0.0)",
+    "matplotlib (>=3.10.6,<4.0.0)",
+    "scikit-learn (>=1.7.2,<2.0.0)",
+    "seaborn (>=0.13.2,<0.14.0)",
+    "altair (>=5.5.0,<6.0.0)",
+    "pillow (>=11.3.0,<12.0.0)",
+    "umap-learn (>=0.5.9.post2,<0.6.0)",
+    "bertopic (>=0.17.3,<0.18.0)",
+    "plotly (>=6.3.0,<7.0.0)",
+    "hdbscan (>=0.8.40,<0.9.0)",
+    "ollama (>=0.5.4,<0.6.0)",
+    "pydantic (>=2.11.9,<3.0.0)",
+    "datasets (>=4.1.0,<5.0.0)",
+    "accelerate (>=1.10.1,<2.0.0)",
+    "jupyter (>=1.1.1,<2.0.0)",
+    "jupyterlab (>=4.4.7,<5.0.0)",
+    "ipython (>=9.5.0,<10.0.0)",
+    "ipykernel (>=6.30.1,<7.0.0)",
+    "ipywidgets (>=8.1.7,<9.0.0)",
+    "torchaudio (==2.7.1)",
+    "evaluate (>=0.4.5,<0.5.0)",
+    "gensim (>=4.3.3,<5.0.0)",
+    "openpyxl (>=3.1.5,<4.0.0)"
+]
+
+[tool.poetry]
+package-mode = false
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
