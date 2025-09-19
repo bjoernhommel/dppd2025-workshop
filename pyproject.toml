@@ -10,7 +10,10 @@ requires-python = ">=3.12,<3.14"
 dependencies = [
     "transformers (==4.54.0)",
     "sentence-transformers (>=5.1.0,<6.0.0)",
-    "torch (==2.8.0)",
+    "torch (==2.2.2) ; platform_system == 'Darwin'",
+    "torch (==2.8.0) ; platform_system != 'Darwin'",
+    "torchaudio (==2.2.2) ; platform_system == 'Darwin'",
+    "torchvision (==0.17.2) ; platform_system == 'Darwin'",
     "marimo (>=0.15.5,<0.16.0)",
     "numpy (>=1.18.5,<2.0.0)",
     "nltk (>=3.9.1,<4.0.0)",
@@ -34,9 +37,7 @@ dependencies = [
     "ipywidgets (>=8.1.7,<9.0.0)",
     "evaluate (>=0.4.5,<0.5.0)",
     "gensim (>=4.3.3,<5.0.0)",
-    "openpyxl (>=3.1.5,<4.0.0)",
-    "torchaudio (>=2.8.0,<3.0.0)",
-    "torchvision (>=0.23.0,<0.24.0)"
+    "openpyxl (>=3.1.5,<4.0.0)"
 ]
 
 [tool.poetry]
