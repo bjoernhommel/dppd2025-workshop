@@ -1,7 +1,7 @@
 [project]
 name = "dppd2025-workshop"
 version = "0.1.0"
-description = ""
+description = "This repository contains material for the DPPD2025 conference workshop [Introduction to Large Language Modeling](https://dppd2025.de/programm/pre-conference-workshops/)."
 authors = [
     {name = "Björn E. Hommel",email = "bjorn.hommel@gmail.com"}
 ]
@@ -10,8 +10,7 @@ requires-python = ">=3.12,<3.14"
 dependencies = [
     "transformers (==4.54.0)",
     "sentence-transformers (>=5.1.0,<6.0.0)",
-    "torch (==2.7.1)",
-    "torchvision (==0.22.1)",
+    "torch (==2.8.0)",
     "marimo (>=0.15.5,<0.16.0)",
     "numpy (>=1.18.5,<2.0.0)",
     "nltk (>=3.9.1,<4.0.0)",
@@ -33,10 +32,11 @@ dependencies = [
     "ipython (>=9.5.0,<10.0.0)",
     "ipykernel (>=6.30.1,<7.0.0)",
     "ipywidgets (>=8.1.7,<9.0.0)",
-    "torchaudio (==2.7.1)",
     "evaluate (>=0.4.5,<0.5.0)",
     "gensim (>=4.3.3,<5.0.0)",
-    "openpyxl (>=3.1.5,<4.0.0)"
+    "openpyxl (>=3.1.5,<4.0.0)",
+    "torchaudio (>=2.8.0,<3.0.0)",
+    "torchvision (>=0.23.0,<0.24.0)"
 ]
 
 [tool.poetry]
