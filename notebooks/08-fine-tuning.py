@@ -97,7 +97,7 @@ def _(mo):
 
 @app.cell
 def _(mo, pd):
-    desirability_data = pd.read_parquet("../data/desirability.parquet").sort_values(by="desirability", ascending=False)
+    desirability_data = pd.read_parquet("data/desirability.parquet").sort_values(by="desirability", ascending=False)
     mo.show_code()
     return (desirability_data,)
 
@@ -482,7 +482,7 @@ def _(
         mo.output.append(
             list(training_output)
         )
-    
+
     mo.show_code()
     return (train_regressive_sentiment,)
 
@@ -528,7 +528,7 @@ async def _(
                 data_collator=data_collator,
                 train_dataset=metric_sentiment_training_data
             )
-        
+
     mo.show_code()
     return
 
@@ -758,7 +758,7 @@ def _(
         mo.output.append(
             list(training_output)
         )
-    
+
     mo.show_code()
     return (train_desirability_model,)
 
@@ -799,7 +799,7 @@ async def _(
                 eval_dataset=eval_dataset,
                 compute_metrics=compute_metrics
             )
-        
+
     mo.show_code()
     return
 
@@ -915,7 +915,6 @@ def _(
         )
 
     mo.show_code()
-
     return (eval_df,)
 
 
